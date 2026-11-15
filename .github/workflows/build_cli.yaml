@@ -36,7 +36,9 @@ jobs:
         tree
 
     - name: Single exec
-      run: pnpm --filter @zcode/cli sea --target linux-arm64
+      run: |
+        pnpm build:sea:prepare
+        pnpm --filter @zcode/cli sea --target linux-arm64
 
     - name: check
       run: |
