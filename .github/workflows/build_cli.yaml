@@ -33,7 +33,7 @@ jobs:
         # node apps/zcode-cli/packages/cli/dist/zcode.cjs --version
         # node apps/zcode-cli/packages/cli/dist/zcode.cjs doctor --json
         pnpm bootstrap
-        pnpm build:zcode
+        pnpm build:zcode --base-url https://invaild.address/zcode
 
     - name: check
       run: |
