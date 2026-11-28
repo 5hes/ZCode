@@ -61,6 +61,6 @@ jobs:
         draft: false
         files: |
           # apps/zcode-cli/packages/cli/dist/*
-          dist/zcode/releases/4.0.0/
+          dist/zcode/releases/4.0.0/*
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
