@@ -41,7 +41,7 @@ jobs:
         # tree
         cd dist/zcode/releases/4.0.0/
         ls -lh
-        tar -xzf zcode-4.0.0.tar.xz
+        tar -xzf zcode-4.0.0.tar.gz
         tree
         exit 1
 
