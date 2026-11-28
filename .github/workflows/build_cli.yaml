@@ -28,7 +28,7 @@ jobs:
 
     - name: Build
       run: |
-        # pnpm install --frozen-lockfile
+        pnpm install --frozen-lockfile
         # pnpm --filter @zcode/cli... build
         # node apps/zcode-cli/packages/cli/dist/zcode.cjs --version
         # node apps/zcode-cli/packages/cli/dist/zcode.cjs doctor --json
