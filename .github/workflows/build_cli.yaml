@@ -40,9 +40,10 @@ jobs:
         # ls -lh apps/zcode-cli/packages/cli/dist/
         # tree
         cd dist/zcode/releases/4.0.0/
-        ls -lh
         tar -xzf zcode-4.0.0.tar.gz
         tree
+        ls -lh
+        du -sh
         exit 1
 
     - name: Single exec
