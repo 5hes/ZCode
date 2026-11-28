@@ -40,27 +40,27 @@ jobs:
         # ls -lh apps/zcode-cli/packages/cli/dist/
         # tree
         cd dist/zcode/releases/4.0.0/
-        tar -xzf zcode-4.0.0.tar.gz
-        tree
+        # tar -xzf zcode-4.0.0.tar.gz
+        # tree
         ls -lh
         du -sh
-        exit 1
 
     - name: Single exec
       run: |
-        pnpm build:sea:prepare
-        pnpm --filter @zcode/cli sea --target linux-arm64
+        # pnpm build:sea:prepare
+        # pnpm --filter @zcode/cli sea --target linux-arm64
 
     - name: check
       run: |
-        ls -lh apps/zcode-cli/packages/cli/dist/
-        tree
+        # ls -lh apps/zcode-cli/packages/cli/dist/
+        # tree
 
     - uses: softprops/action-gh-release@v3
       with:
         tag_name: "cli"
         draft: false
         files: |
-          apps/zcode-cli/packages/cli/dist/*
+          # apps/zcode-cli/packages/cli/dist/*
+          dist/zcode/releases/4.0.0/
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
